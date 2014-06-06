@@ -1,0 +1,24 @@
+---
+# defaults file for example-role
+
+#hash example
+service_name:
+  os:
+    runtime: 2345
+  conf:
+    max_memory: 128
+    user: robin
+    group: robin
+    some_flag: True
+    os_specific_directory: /opt/jumangi
+
+
+#named spaced example
+service_name_os_runtimes: 2345
+service_name_conf_max_memory: 128
+service_name_conf_user: bob
+service_name_conf_group: bob
+service_name_conf_some_flag: True
+service_name_conf_os_specific_directory: /opt/jumangi
+service_name_conf_arbitrary_os_additions: {}
+service_name_conf_arbitrary_playbook_additions: {}

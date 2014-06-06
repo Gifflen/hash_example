@@ -1,0 +1,18 @@
+---
+- name: Testing
+  hosts: all
+
+  vars:
+    #Merge
+    service_name:
+      conf:
+        user: mork
+        some_arbitrary_value: Logging level override
+
+    #Namespaced
+    service_name_conf_user: mork
+    service_name_conf_arbitrary_playbook_additions:
+     some_arbitrary_value: Logging level override
+
+  roles:
+    - example-role

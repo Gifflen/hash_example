@@ -1,0 +1,13 @@
+---
+#Hash Example
+service_name:
+  conf:
+    os_specific_directory: /opt/Hook
+    some_aribitrary_OS_specific_tweak: Debian
+
+
+
+#####Name Spaced Example####
+service_name_conf_os_specific_directory: /opt/Hook
+service_name_conf_arbitrary_os_additions:
+  some_aribitrary_OS_specific_tweak: Debian

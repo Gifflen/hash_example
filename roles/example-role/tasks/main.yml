@@ -1,0 +1,19 @@
+---
+# tasks file for example-role
+
+- debug: var=service_name
+
+- name: Include OS Specific values
+  include_vars: "{{ ansible_os_family }}.yml"
+
+- debug: var=service_name
+
+
+- name: Templating Config
+  template: src=service.conf.j2 dest=/tmp/service.conf
+
+- name: Create ansible fact directory
+  file: name=/etc/ansible/facts.d state=directory
+
+- name: Place custom facts
+  template: src=service_name.fact.j2 dest=/etc/ansible/facts.d/service_name.fact

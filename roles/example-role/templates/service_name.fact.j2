@@ -1,0 +1,14 @@
+{# Merge #}
+{{ service_name | to_nice_json }},
+
+{# Named Spaced #}
+{
+    "service_name_os_runtimes": "{{ service_name_os_runtimes }}",
+    "service_name_conf_max_memory": "{{ service_name_conf_max_memory }}",
+    "service_name_conf_user": "{{ service_name_conf_user }}",
+    "service_name_conf_group": "{{ service_name_conf_group }}",
+    "service_name_conf_some_flag": "{{ service_name_conf_some_flag }}",
+    "service_name_conf_os_specific_directory": "{{ service_name_conf_os_specific_directory }}",
+    "service_name_conf_arbitrary_os_additions": "{{ service_name_conf_arbitrary_os_additions }}",
+    "service_name_conf_arbitrary_playbook_additions": "{{ service_name_conf_arbitrary_playbook_additions }}",
+}
