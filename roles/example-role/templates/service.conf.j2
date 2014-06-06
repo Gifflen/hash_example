@@ -5,8 +5,8 @@
 # Since it is an associative array we can
 # add arbitary values as needed as well as overwrite specfic defaults using
 # hash_behaviour = merge
-# No matter how much we extend functionality or the configs change our template
-# is consistant
+# No matter how much we extend functionality or the configs change, our template
+# is consistantly simple and trival to add variables to.
 
 {% for key, val in service_name.conf.iteritems() %}
 {{ key }} = {{ val }}
@@ -15,7 +15,8 @@
 
 ####Name Spaced Example####
 # Here we can see the complexity of the template increase with the number of
-# values present
+# values present. While this is more explicit for services with a lot of configuration
+# options such as php and mysql this can become a bit unweildy.
 max_memory = {{ service_name_conf_max_memory }}
 user = {{ service_name_conf_user }}
 group = {{ service_name_conf_group }}
