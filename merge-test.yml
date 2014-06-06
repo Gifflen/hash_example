@@ -12,7 +12,7 @@
     #Namespaced
     service_name_conf_user: mork
     service_name_conf_arbitrary_playbook_additions:
-     some_arbitrary_value: Logging level override
+    some_arbitrary_value: Logging level override
 
   roles:
     - example-role
