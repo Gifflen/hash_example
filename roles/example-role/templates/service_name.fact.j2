@@ -1,7 +1,16 @@
 {# Merge #}
+{#
+ Here we can expose all values used by this role in one concise and easy fasion
+ We were considering using facts for some form of autodiscovery in the future.
+ This method allows services to configure each other intelegently.
+ #}
 {{ service_name | to_nice_json }},
 
 {# Named Spaced #}
+{#
+   As we saw with service.conf this becomes increasingly more complex and prone
+   to need to refector. The above solution requires no refactoring as values change.
+#}
 {
     "service_name_os_runtimes": "{{ service_name_os_runtimes }}",
     "service_name_conf_max_memory": "{{ service_name_conf_max_memory }}",
