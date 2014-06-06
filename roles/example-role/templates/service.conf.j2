@@ -28,7 +28,7 @@ some_flag = {{ service_name_conf_some_flag }}
 os_specific_directory = {{ service_name_conf_os_specific_directory }}
 
 # At this point we need to add multiple ways of inputting arbitrary data to
-# keep they apart since we cannot merge the hashes. This makes overwritting
+# keep them apart since we cannot merge the hashes. This makes overwritting
 # arbitrary values found during os detection pretty tricky.
 {% for key, val in service_name_conf_arbitrary_os_additions.iteritems() %}
 {{ key }} = {{ val }}
