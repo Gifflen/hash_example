@@ -1,0 +1,6 @@
+---
+
+service_name:
+  conf:
+    os_specific_directory: /opt/Hook
+    some_OTHER_specific_tweak: Debian

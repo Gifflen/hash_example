@@ -8,6 +8,10 @@
 # No matter how much we extend functionality or the configs change, our template
 # is consistantly simple and trival to add variables to.
 
+# You'll notice that when expose_bug is set to true in the playbook
+# some_aribitrary_OS_specific_tweak disappears since merging behavior is
+# different for include_vars.
+
 {% for key, val in service_name.conf.iteritems() %}
 {{ key }} = {{ val }}
 {% endfor %}

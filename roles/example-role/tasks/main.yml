@@ -6,6 +6,10 @@
 - name: Include OS Specific values
   include_vars: "{{ ansible_os_family }}.yml"
 
+- name: Second include
+  include_vars: "second_include.yml"
+  when: expose_bug
+
 - debug: var=service_name
 
 
